@@ -16,7 +16,6 @@ pipeline {
                     sh '''
                         echo test
                         env
-                        echo $GIT_REF
                         '''
                 }
         }
