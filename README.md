@@ -77,5 +77,3 @@ server {
 - user ngrok
 - install github integration plugin in jenkins
 - add webhook to the repo `http://xxxx.ngrok.io/github-webhook/`
-
-!!!
