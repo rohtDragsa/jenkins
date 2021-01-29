@@ -11,20 +11,3 @@
 # jenkins
 
 https://www.youtube.com/watch?v=6BIry0cepz4
-
-**environment**
-
-```groovy
-pipeline {
-    agent any
-    environment { //This env will be available in all pipeline
-        HELLO = 'world'
-    }
-
-    stages {
-        ...
-    }
-}
-```
-
-**paramiters**
