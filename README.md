@@ -12,7 +12,7 @@ docker run -p 8080:8080 -p 50000:50000 -v ~/jenkins-data-docker:/var/jenkins_hom
 
 #### ESXI VM CentOs8
 
-```
+```bash
 sudo dnf install java-1.8.0-openjdk-devel
 sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
 sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
@@ -34,7 +34,7 @@ https://www.jenkins.io/doc/book/system-administration/reverse-proxy-configuratio
 - remove server entry from /etc/nginx/nginx.conf
 - create new file /etc/nginx/conf.d/jenkins.conf with the content below
 
-```json
+```bash
 
 upstream jenkins {
     server 127.0.0.1:8080;
@@ -79,3 +79,6 @@ server {
 - add webhook to the repo `http://xxxx.ngrok.io/github-webhook/`
 
 !!!!
+
+
+### Pipelines
