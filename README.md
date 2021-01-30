@@ -91,3 +91,14 @@ server {
 ### Plugins
 
 https://plugins.jenkins.io/git-changelog/
+
+### Issues
+
+```bash
++ git clone git@github.com:rohtDragsa/jenkins.git
+Cloning into 'jenkins'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+```
+
+The issue above was resolved by adding ssh key pairs to `/var/lib/jenkins/.ssh`
