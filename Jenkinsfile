@@ -1,29 +1,20 @@
 #!groovy
 
 pipeline {
-    agent none
-
-    options {
-    timestamps()
-    
-  }
-
+    agent any
 
     stages {
-        stage('Build') {
-            agent any
-                steps {
-                    sh '''
-                        echo test
-                        env
-                        echo $GIT_REF
-                        '''
-                }
+        stage("Checkout") {
+            steps {
+            
+                sh """
+                whoami
+                git clone git@github.com:rohtDragsa/jenkins.git
+                """
+            }
         }
-        
     }
 }
-
 
 //pipeline-terrform
 https://www.nbcnews.com/think/opinion/redditors-took-hedge-funds-over-gamestop-amc-theatres-stock-won-ncna1255919
