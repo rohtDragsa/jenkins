@@ -16,8 +16,10 @@ pipeline {
     }
 }
 
+
+
 //pipeline-terrform
-https://www.nbcnews.com/think/opinion/redditors-took-hedge-funds-over-gamestop-amc-theatres-stock-won-ncna1255919
+//https://www.nbcnews.com/think/opinion/redditors-took-hedge-funds-over-gamestop-amc-theatres-stock-won-ncna1255919
 
 
 // node ('master') {     
