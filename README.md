@@ -67,9 +67,12 @@ server {
 
 #### Credentials
 
-- on the jenkins machine create ssh key
-- update github with pub ssh key
-- in jenkins go to credentials and add github username and private key generated on the jenkins machine
+- create ssh key pair for Jenkins host
+- update github with pub ssh key of Jenkins host
+- Manage Jenkins > Manage Credentials add:
+  - github username and private key generated on the Jenkins machine
+  - secret for github token
+- Manage Jenkins > Configure System > GitHub Github Servers: add secret token
 
 #### Local setup
 
@@ -78,5 +81,9 @@ server {
 - install github integration plugin in jenkins
 - add webhook to the repo `http://xxxx.ngrok.io/github-webhook/`
 
-
 ### Pipelines
+
+- VScode plugin: Jenkins Pipeline Linter Connector
+- Open Pipeline project, down the page there is Script Path code. The link point to some documentation and tools generating some snippets.
+
+- https://www.jenkins.io/doc/book/pipeline/syntax/

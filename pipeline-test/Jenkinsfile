@@ -1,0 +1,30 @@
+#!/usr/bin/env groovy
+
+pipeline {
+    agent any
+    environment {
+        my_env_global = "This is Sparta!"
+    }
+    options {
+        timeout(time: 10, unit: "SECONDS")
+
+    }
+    stages {
+        stage('One') {
+            environment {
+                my_env_stage_local = "Local Variable"
+
+            }
+            steps {
+                echo "Hello World"
+                echo "$my_env_global"
+                sh 'echo "Here you go: $my_env_stage_local"'
+           }
+        }
+        stage("RobinHood") {
+            steps {
+                echo "This is RobinHood give me your money!!!"
+            }
+        }
+    }
+}
