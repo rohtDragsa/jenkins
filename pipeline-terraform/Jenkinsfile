@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+
+    stages {
+        stage("Checkout") {
+            steps {
+            
+                sh """
+                whoami
+                git clone git@github.com:rohtDragsa/jenkins.git
+                """
+            }
+        }
+    }
+}

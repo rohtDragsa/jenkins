@@ -87,3 +87,7 @@ server {
 - Open Pipeline project, down the page there is Script Path code. The link point to some documentation and tools generating some snippets.
 
 - https://www.jenkins.io/doc/book/pipeline/syntax/
+
+### Plugins
+
+https://plugins.jenkins.io/git-changelog/
